@@ -154,7 +154,9 @@ main {
   main {
     margin: 0;
     padding: 1rem;
+    margin-bottom: 5rem !important;
   }
+
 }
 
 .avatar,
@@ -207,7 +209,7 @@ main {
 
 .wakatime-actv {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -242,7 +244,7 @@ main {
 
   .wakatime-actv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
 }
