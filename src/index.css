@@ -136,7 +136,7 @@ main {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 3.5rem;
   }
 
   .logo {
@@ -149,6 +149,11 @@ main {
 
   .nav-link {
     justify-content: center;
+    height: 3.5rem;
+  }
+
+  .nav-link svg{
+    height: 1.5rem;
   }
 
   main {
