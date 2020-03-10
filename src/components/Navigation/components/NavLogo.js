@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 const NavLogo = () => {
 	return (
-		<li className='logo'>
-			<Link to='/' className='nav-link'>
-				<span className='link-text'>iyansr.id</span>
-				<Arrow className='nav-logo' />
+		<li className='logo-isr'>
+			<Link to='/' className='nav-link-isr'>
+				<span className='link-text-isr'>iyansr.id</span>
+				<Arrow className='nav-logo-isr' />
 			</Link>
 		</li>
 	)
