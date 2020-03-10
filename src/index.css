@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Open Sans' !important;
+  font-family: 'Poppins' !important;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Open Sans' !important;
+  font-family: 'Poppins' !important;
   color: var(--text-primary);
   background-color: var(--bg-secondary);
   margin: 0;
@@ -32,7 +32,7 @@ main {
   margin-left: 5rem;
   padding: 1rem;
   text-align: center;
-
+  min-height: 100vh;
 }
 
 .link {
@@ -44,6 +44,7 @@ main {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
+  z-index: 1;
 }
 
 .navbar-nav-isr {
@@ -78,6 +79,8 @@ main {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
+  text-decoration: none;
+
 }
 
 .link-text-isr {
@@ -265,4 +268,14 @@ main {
     display: flex;
     flex-direction: row;
   }
+}
+
+.isr--footer {
+  margin-top: 5rem;
+  /* background: red; */
+  height: 3rem;
+  /* width: 100vw; */
+  margin-left: 5rem;
+  text-align: center;
+  font-size: .75rem;
 }
