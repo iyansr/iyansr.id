@@ -20,7 +20,7 @@ const App = () => {
 				</main>
 				<div className='isr--footer'>
 					<span>
-						© iyansr.id built with{' '}
+						© 2020 iyansr.id built with{' '}
 						<span role='img' aria-label='emoji'>
 							🔥
 						</span>{' '}
