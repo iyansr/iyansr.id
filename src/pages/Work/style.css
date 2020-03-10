@@ -46,11 +46,16 @@
    font-size: .8rem;
    margin-left: .4rem;
    margin-top: .4rem;
+   transition: 200ms;
 }
 
 .card--tag .card--logo-footer {
    height: 1rem;
    width: 1rem;
+}
+
+.card--tag:hover {
+   color: #ececec;
 }
 
 .card__cont {

@@ -13,14 +13,14 @@ const PostCard = ({ work }) => {
 					<h3 className='my-4'>{work.title}</h3>
 					<p className='card--desc'>{work.desc}</p>
 				</div>
-				<a href={work.link} rel='noopener noreferrer' target='_blank' className='card--tag-container'>
-					<span className='card--tag'>
+				<div className='card--tag-container'>
+					<a href={work.link} rel='noopener noreferrer' target='_blank' className='card--tag'>
 						<Chrome className='card--logo-footer' />
-					</span>
-					<span className='card--tag'>
+					</a>
+					<a href={work.github_url} rel='noopener noreferrer' target='_blank' className='card--tag'>
 						<Github className='card--logo-footer' />
-					</span>
-				</a>
+					</a>
+				</div>
 			</div>
 		</div>
 	)
