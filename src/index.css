@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: 'Poppins' !important;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -9,6 +9,7 @@
 }
 
 body {
+  font-family: 'Poppins' !important;
   color: var(--text-primary);
   background-color: var(--bg-secondary);
   margin: 0;
@@ -31,7 +32,7 @@ main {
   margin-left: 5rem;
   padding: 1rem;
   text-align: center;
-
+  min-height: 100vh;
 }
 
 .link {
@@ -39,13 +40,14 @@ main {
   color: #df49a6;
 }
 
-.navbar {
+.navbar-isr {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
+  z-index: 1;
 }
 
-.navbar-nav {
+.navbar-nav-isr {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -55,15 +57,15 @@ main {
   height: 100%;
 }
 
-.nav-item {
+.nav-item-isr {
   width: 100%;
 }
 
-.nav-item:last-child {
+.nav-item-isr:last-child {
   margin-top: auto;
 }
 
-.nav-link {
+.nav-link-isr {
   display: flex;
   align-items: center;
   height: 5rem;
@@ -73,18 +75,20 @@ main {
   transition: var(--transition-speed);
 }
 
-.nav-link:hover {
+.nav-link-isr:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
+  text-decoration: none;
+
 }
 
-.link-text {
+.link-text-isr {
   display: none;
   margin-left: 1rem;
 }
 
-.nav-link svg {
+.nav-link-isr svg {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
@@ -94,7 +98,7 @@ main {
   border: 2px dashed var(--bg-primary)
 }
 
-.nav-logo {
+.nav-logo-isr {
   color: #df49a6;
 }
 
@@ -103,7 +107,7 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo {
+.logo-isr {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -115,44 +119,44 @@ main {
   width: 100%;
 }
 
-.logo svg {
+.logo-isr svg {
   transform: rotate(0deg);
   transition: var(--transition-speed);
 }
 
-.logo-text {
+.logo-text-isr {
   display: inline;
   position: absolute;
   left: -999px;
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
+.navbar-isr:hover .logo-isr svg {
   transform: rotate(-180deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
+  .navbar-isr {
     bottom: 0;
     width: 100vw;
     height: 3.5rem;
   }
 
-  .logo {
+  .logo-isr {
     display: none;
   }
 
-  .navbar-nav {
+  .navbar-nav-isr {
     flex-direction: row;
   }
 
-  .nav-link {
+  .nav-link-isr {
     justify-content: center;
     height: 3.5rem;
   }
 
-  .nav-link svg{
+  .nav-link-isr svg {
     height: 1.5rem;
   }
 
@@ -182,30 +186,30 @@ main {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-  .navbar {
+  .navbar-isr {
     top: 0;
     width: 5rem;
     height: 100vh;
   }
 
-  .navbar:hover {
+  .navbar-isr:hover {
     width: 16rem;
   }
 
-  .navbar:hover .link-text {
+  .navbar-isr:hover .link-text-isr {
     display: inline;
   }
 
-  .navbar:hover .logo svg {
+  .navbar-isr:hover .logo-isr svg {
     margin-left: 1rem;
   }
 
-  .navbar:hover .logo-text {
+  .navbar-isr:hover .logo-text-isr {
     left: 0px;
   }
 }
 
-.container {
+.container--custom {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -219,7 +223,7 @@ main {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .container {
+  .container--custom {
     width: 570px;
   }
 
@@ -231,7 +235,7 @@ main {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .container {
+  .container--custom {
     width: 750px;
   }
 
@@ -243,7 +247,7 @@ main {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container {
+  .container--custom {
     width: 970px;
   }
 
@@ -256,7 +260,7 @@ main {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .container {
+  .container--custom {
     width: 1170px;
   }
 
@@ -264,4 +268,14 @@ main {
     display: flex;
     flex-direction: row;
   }
+}
+
+.isr--footer {
+  margin-top: 5rem;
+  /* background: red; */
+  height: 3rem;
+  /* width: 100vw; */
+  margin-left: 5rem;
+  text-align: center;
+  font-size: .75rem;
 }
