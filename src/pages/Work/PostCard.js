@@ -1,8 +1,15 @@
 import React from 'react'
 import { ReactComponent as Chrome } from '../../assets/svg/chrome-brands.svg'
 import { ReactComponent as Github } from '../../assets/svg/github-brands.svg'
+import ReactGA from 'react-ga'
 
 const PostCard = ({ work }) => {
+	const onClickBtn = url => {
+		ReactGA.event({
+			label: `Link to Project ${url}`,
+			category: 'Card Label',
+		})
+	}
 	return (
 		<div className='col-sm-12 col-md-6 col-lg-4 my-3 card__cont'>
 			<div className='card-container--custom'>
@@ -15,7 +22,12 @@ const PostCard = ({ work }) => {
 				</div>
 				<div className='card--tag-container'>
 					{work.link && (
-						<a href={work.link} rel='noopener noreferrer' target='_blank' className='card--tag'>
+						<a
+							href={work.link}
+							rel='noopener noreferrer'
+							target='_blank'
+							className='card--tag'
+							onClick={() => onClickBtn(work.link)}>
 							<Chrome className='card--logo-footer' />
 						</a>
 					)}

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
+import ReactGA from 'react-ga'
 
 const Page404 = () => {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname)
+	}, [])
 	return (
 		<div>
 			<Helmet>
-				<title>Portfolio | iyansr.id</title>
+				<title>Not Found | iyansr.id</title>
 			</Helmet>
 			<h1>Ups... Seems like you're visiting wrong page</h1>
 			<p>

@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
+import ReactGA from 'react-ga'
 
-const index = () => {
+const About = () => {
+	useEffect(() => {
+		ReactGA.pageview('/blog')
+	}, [])
 	return (
 		<div>
 			<Helmet>
@@ -17,4 +21,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default About
