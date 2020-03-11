@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './index.css'
 import { Navigation } from './components'
 import { Page404 } from './pages'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { routes } from './routes'
+import ReactGA from 'react-ga'
 
 const App = () => {
+	useEffect(() => {
+		ReactGA.initialize('UA-108114369-1')
+	}, [])
 	return (
 		<div>
 			<Router>

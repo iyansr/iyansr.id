@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import './style.css'
 import PostCard from './PostCard'
 import { works } from './work.js'
+import ReactGA from 'react-ga'
 
 const WorkPage = () => {
+	useEffect(() => {
+		ReactGA.pageview('/work')
+	}, [])
 	return (
 		<div>
 			<Helmet>
