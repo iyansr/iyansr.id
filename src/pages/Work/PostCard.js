@@ -14,9 +14,12 @@ const PostCard = ({ work }) => {
 					<p className='card--desc'>{work.desc}</p>
 				</div>
 				<div className='card--tag-container'>
-					<a href={work.link} rel='noopener noreferrer' target='_blank' className='card--tag'>
-						<Chrome className='card--logo-footer' />
-					</a>
+					{work.link && (
+						<a href={work.link} rel='noopener noreferrer' target='_blank' className='card--tag'>
+							<Chrome className='card--logo-footer' />
+						</a>
+					)}
+
 					<a href={work.github_url} rel='noopener noreferrer' target='_blank' className='card--tag'>
 						<Github className='card--logo-footer' />
 					</a>
