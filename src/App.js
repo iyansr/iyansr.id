@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import { Navigation } from './components'
 import { Page404 } from './pages'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { routes } from './routes'
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
 						<span role='img' aria-label='emoji'>
 							🔥
 						</span>{' '}
-						by Iyan Saputra
+						by <Link to='/'>Iyan Saputra</Link>
 					</span>
 				</div>
 			</Router>

@@ -102,6 +102,18 @@ main {
   color: #df49a6;
 }
 
+a {
+  color: #df49a6;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+a:hover {
+  color: #6649b8;
+  text-decoration: none;
+
+}
+
 .fa-primary,
 .fa-secondary {
   transition: var(--transition-speed);
@@ -166,6 +178,11 @@ main {
     margin-bottom: 5rem !important;
   }
 
+  .isr--footer {
+    margin-bottom: 6rem;
+    margin-left: 0;
+  }
+
 }
 
 .avatar,
@@ -207,6 +224,11 @@ main {
   .navbar-isr:hover .logo-text-isr {
     left: 0px;
   }
+
+  .isr--footer {
+    margin-left: 5rem;
+  }
+
 }
 
 .container--custom {
@@ -275,7 +297,6 @@ main {
   /* background: red; */
   height: 3rem;
   /* width: 100vw; */
-  margin-left: 5rem;
   text-align: center;
   font-size: .75rem;
 }

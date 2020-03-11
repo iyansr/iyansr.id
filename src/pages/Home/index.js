@@ -16,6 +16,7 @@ const index = () => {
 					loader={<div className='loader'></div>}
 				/>
 			</div>
+			<br />
 			<h1 className='main-name'>I Putu Saputrayana</h1>
 			<div className='mini-info'>
 				<p>Depok, Indonesia</p>
@@ -24,7 +25,7 @@ const index = () => {
 					<p style={{ fontWeight: 'bold' }}>DOOgether</p>
 				</div>
 			</div>
-
+			<br />
 			<hr className='main-line' />
 			<h1>About</h1>
 			<p>
@@ -32,6 +33,9 @@ const index = () => {
 				Native, and Flutter. And would be a fast learner to doing new things and build good teamwork either. Can become
 				a project leader/manager and using tools like Trello to manage project and task.
 			</p>
+			<br />
+			<hr className='main-line' />
+			<br />
 			<h1 className='my-8'>Coding Activities</h1>
 			<br />
 			<div className='row'>
