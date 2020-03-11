@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import './style.css'
 import PostCard from './PostCard'
-import { works } from './work.json'
+import { works } from './work.js'
 
 const WorkPage = () => {
 	return (
@@ -18,6 +18,8 @@ const WorkPage = () => {
 					🔥
 				</span>{' '}
 			</h1>
+			<br />
+			<hr className='main-line' />
 			<br />
 			<br />
 
