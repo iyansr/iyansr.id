@@ -2,10 +2,8 @@ import React from 'react'
 import Img from 'react-image'
 import { Helmet } from 'react-helmet'
 import { Layout } from 'components'
-import ReactGA from 'react-ga'
 
 const index = () => {
-	ReactGA.pageview('/')
 	return (
 		<Layout>
 			<Helmet>

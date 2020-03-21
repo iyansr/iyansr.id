@@ -1,39 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Helmet } from 'react-helmet'
-import ReactGA from 'react-ga'
 import './style.css'
 import PostCard from './PostCard'
-import Axios from 'axios'
-
-let BASE_URL
-
-if (process.env.NODE_ENV === 'production') {
-	BASE_URL = process.env.REACT_APP_BASE_API_URL
-} else {
-	BASE_URL = 'http://localhost:9000/.netlify/functions/api/v1'
-}
+import { BlogContext } from 'context/blog/BlogContext'
 
 const Blog = () => {
-	const [posts, setPosts] = useState([])
-	const [isLoading, setIsLoading] = useState(true)
+	const blogContext = useContext(BlogContext)
 
-	const fetchPosts = async () => {
-		try {
-			const result = await Axios.get(`${BASE_URL}/blog`)
-			setPosts(result.data.list)
-			setIsLoading(false)
-		} catch (error) {
-			console.log(error)
-		}
-	}
-
-	useEffect(() => {
-		fetchPosts()
-	}, [])
-
-	useEffect(() => {
-		ReactGA.pageview('/blog')
-	}, [])
+	const { isLoading, posts, error } = blogContext
 
 	return (
 		<div>
@@ -47,7 +21,9 @@ const Blog = () => {
 				</span>{' '}
 			</h1>
 			<hr className='main-line mt-5 mb-5' />
-			<div className='row'>{!isLoading && posts.map((post, index) => <PostCard key={index} post={post} />)}</div>
+			<div className='row'>
+				{!isLoading && !error && posts.map((post, index) => <PostCard key={index} post={post} />)}
+			</div>
 		</div>
 	)
 }

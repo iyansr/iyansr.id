@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
-import ReactGA from 'react-ga'
 
 const About = () => {
-	useEffect(() => {
-		ReactGA.pageview('/blog')
-	}, [])
 	return (
 		<div>
 			<Helmet>
