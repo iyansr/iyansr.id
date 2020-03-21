@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import * as Sentry from '@sentry/browser'
-// import ReactGA from 'react-ga'
-
-// if (process.env.NODE_ENV === 'production') {
-// 	ReactGA.initialize('UA-108114369-1')
-// 	ReactGA.pageview(window.location.pathname + window.location.search)
-// }
 
 Sentry.init({ dsn: 'https://8fa1ee8e07264f8cb654d0e1358a9642@sentry.io/3532923' })
 
