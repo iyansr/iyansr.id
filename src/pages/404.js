@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import ReactGA from 'react-ga'
 
 const Page404 = () => {
-	useEffect(() => {
-		ReactGA.pageview(window.location.pathname)
-	}, [])
 	return (
 		<div>
 			<Helmet>

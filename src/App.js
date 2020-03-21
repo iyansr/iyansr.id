@@ -1,20 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './index.css'
 import { Navigation } from './components'
 import { Page404 } from './pages'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { routes } from './routes'
-import ReactGA from 'react-ga'
+import Footer from 'components/Footer'
+import BlogContextState from 'context/blog/BlogContext'
 
 const App = () => {
-	useEffect(() => {
-		if (process.env.NODE_ENV === 'production') {
-			ReactGA.initialize('UA-108114369-1')
-		}
-		console.log(process.env.NODE_PATH)
-	}, [])
 	return (
-		<div>
+		<BlogContextState>
 			<Router>
 				<Navigation />
 				<main>
@@ -25,17 +20,9 @@ const App = () => {
 						<Route component={Page404} />
 					</Switch>
 				</main>
-				<div className='isr--footer'>
-					<span>
-						© 2020 iyansr.id built with{' '}
-						<span role='img' aria-label='emoji'>
-							🔥
-						</span>{' '}
-						by <Link to='/'>Iyan Saputra</Link>
-					</span>
-				</div>
+				<Footer />
 			</Router>
-		</div>
+		</BlogContextState>
 	)
 }
 
