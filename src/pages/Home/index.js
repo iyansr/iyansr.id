@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'react-image'
 import { Helmet } from 'react-helmet'
-import { Layout } from '../../components'
+import { Layout } from 'components'
 import ReactGA from 'react-ga'
 
 const index = () => {
@@ -38,20 +38,8 @@ const index = () => {
 			<br />
 			<hr className='main-line' />
 			<br />
-			<h1 className='my-8'>Coding Activities</h1>
-			<br />
-			<div className='row'>
-				<figure className='col-lg-6 '>
-					<embed
-						style={{ borderRadius: '1rem' }}
-						src='https://wakatime.com/share/@iyansr/dc567173-9272-476f-80f3-49e60a6a7227.svg'></embed>
-				</figure>
-				<figure className='col-lg-6 '>
-					<embed
-						style={{ borderRadius: '1rem' }}
-						src='https://wakatime.com/share/@iyansr/e6cf2b9d-10c8-47b1-a6d1-59b4395291c6.svg'></embed>
-				</figure>
-			</div>
+			<h1 className='mb-5'>Contribution Chart</h1>
+			<img src='https://ghchart.rshah.org/iyansr' alt='contribution chart' style={{ width: '100%' }} />
 		</Layout>
 	)
 }

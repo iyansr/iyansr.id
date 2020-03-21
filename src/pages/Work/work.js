@@ -1,7 +1,7 @@
 export const works = [
 	{
 		id: 4,
-		thumbnail: require('../../assets/images/ngobrol_dong.webp'),
+		thumbnail: require('assets/images/ngobrol_dong.webp'),
 		title: 'Ngobrol App',
 		github_url: 'https://github.com/iyansr/ngobrol-dong',
 		link: null,
@@ -10,7 +10,7 @@ export const works = [
 	},
 	{
 		id: 3,
-		thumbnail: require('../../assets/images/todo_app.webp'),
+		thumbnail: require('assets/images/todo_app.webp'),
 		title: 'React Native To Do',
 		github_url: 'https://github.com/iyansr/react-native-todo',
 		link: null,
@@ -18,7 +18,7 @@ export const works = [
 	},
 	{
 		id: 1,
-		thumbnail: require('../../assets/images/hime_restaurant.webp'),
+		thumbnail: require('assets/images/hime_restaurant.webp'),
 		title: 'Hime Restaurant',
 		github_url: 'https://github.com/iyansr/hime-restaurant',
 		link: 'https://hime-restaurant.now.sh/',
@@ -27,7 +27,7 @@ export const works = [
 
 	{
 		id: 2,
-		thumbnail: require('../../assets/images/covid_19.webp'),
+		thumbnail: require('assets/images/covid_19.webp'),
 		title: 'Covid-19 Update',
 		github_url: 'https://github.com/iyansr/covid-19-update',
 		link: 'https://covid19.iyansr.id',
