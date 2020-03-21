@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ReactComponent as Arrow } from '../../../assets/svg/angle-double-right-solid.svg'
+import { ReactComponent as Arrow } from '../../assets/svg/angle-double-right-solid.svg'
 import { Link } from 'react-router-dom'
 
 const NavLogo = () => {
