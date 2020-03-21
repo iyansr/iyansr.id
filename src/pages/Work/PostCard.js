@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReactComponent as Chrome } from '../../assets/svg/chrome-brands.svg'
-import { ReactComponent as Github } from '../../assets/svg/github-brands.svg'
+import { ReactComponent as Chrome } from 'assets/svg/chrome-brands.svg'
+import { ReactComponent as Github } from 'assets/svg/github-brands.svg'
 import ReactGA from 'react-ga'
 
 const PostCard = ({ work }) => {

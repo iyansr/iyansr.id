@@ -8,7 +8,10 @@ import ReactGA from 'react-ga'
 
 const App = () => {
 	useEffect(() => {
-		ReactGA.initialize('UA-108114369-1')
+		if (process.env.NODE_ENV === 'production') {
+			ReactGA.initialize('UA-108114369-1')
+		}
+		console.log(process.env.NODE_PATH)
 	}, [])
 	return (
 		<div>

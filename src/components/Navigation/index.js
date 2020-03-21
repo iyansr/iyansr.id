@@ -1,10 +1,10 @@
 import React from 'react'
-import NavLink from './components/NavLink'
-import NavLogo from './components/NavLogo'
-import { ReactComponent as Branch } from '../../assets/svg/code-branch-solid.svg'
-import { ReactComponent as HomeLogo } from '../../assets/svg/synagogue-solid.svg'
-import { ReactComponent as Pen } from '../../assets/svg/pen-nib-solid.svg'
-import { ReactComponent as Person } from '../../assets/svg/user-circle-solid.svg'
+import NavLink from 'components/Navigation/NavLink'
+import NavLogo from 'components/Navigation/NavLogo'
+import { ReactComponent as Branch } from 'assets/svg/code-branch-solid.svg'
+import { ReactComponent as HomeLogo } from 'assets/svg/synagogue-solid.svg'
+import { ReactComponent as Pen } from 'assets/svg/pen-nib-solid.svg'
+import { ReactComponent as Person } from 'assets/svg/user-circle-solid.svg'
 
 const Navigation = () => {
 	return (
