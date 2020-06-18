@@ -42,7 +42,7 @@
     ]
   },
   "devDependencies": {
-    "react-test-renderer": "^16.13.0"
+    "react-test-renderer": "^16.13.1"
   },
   "jest": {
     "coverageThreshold": {
